@@ -1,0 +1,26 @@
+[
+    {
+        "id":"1",
+        "name":"Natt Friedman",
+        "email":"nat@github.com",
+        "kelamin":"Laki-laki",
+        "status":"Kamu",
+        "telephone":"081234567890"
+    },
+    {
+        "id":"2",
+        "name":"Bilie Elish",
+        "email":"bilie@gmail.com",
+        "kelamin":"Perempuan",
+        "status":"Istri",
+        "telephone":"081234567891"
+    },
+    {
+        "id":"e",
+        "name":"Adam Walker",
+        "email":"adam@gmail.com",
+        "kelamin":"Laki-laki",
+        "status":"Anak",
+        "telephone":"081234567892"
+    }
+]

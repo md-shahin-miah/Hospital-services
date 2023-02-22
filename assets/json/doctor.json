@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "name":"Dr. Pratama Yoga S",
+        "specialist":"Dokter Umum",
+        "photos":"assets/images/doctor.png"
+    },
+    {
+        "id":"2",
+        "name":"Dr. Agung Satrio",
+        "specialist":"Spesialis Syaraf",
+        "photos":"assets/images/doctor_2.jpg"
+    },
+    {
+        "id":"3",
+        "name":"Dr. Zanuar",
+        "specialist":"Spesialis Mata",
+        "photos":"assets/images/doctor_3.jpg"
+    },
+    {
+        "id":"1",
+        "name":"Dr. Nina Nadia",
+        "specialist":"Spesialis Telinga",
+        "photos":"assets/images/doctor_5.jpg"
+    },
+    {
+        "id":"1",
+        "name":"Dr. Vladimir Putin",
+        "specialist":"Dokter Gigi",
+        "photos":"assets/images/doctor_4.jpg"
+    }
+]

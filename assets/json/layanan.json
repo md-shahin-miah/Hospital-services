@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nama": "Ruang Operasi",
+        "short_desc": "Short Desc",
+        "deskripsi": "Description",
+        "image": "assets/images/ruang_operasi.jpg"
+    },
+    {
+        "id": 1,
+        "nama": "Ruang Pemeriksaan",
+        "short_desc": "Short Desc",
+        "deskripsi": "Description",
+        "image": "assets/images/ruang_periksa.jpg"
+    },
+    {
+        "id": 1,
+        "nama": "Ruang Tunggu Pasien",
+        "short_desc": "Short Desc",
+        "deskripsi": "Description",
+        "image": "assets/images/ruang_tunggu.jpeg"
+    }
+]

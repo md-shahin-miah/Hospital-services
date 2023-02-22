@@ -1,0 +1,17 @@
+[
+    {
+        "id":"1",
+        "partner":"Alodokter",
+        "logo":"assets/images/alodokter.png"
+    },
+    {
+        "id":"2",
+        "partner":"International SOS",
+        "logo":"assets/images/inter_sos.png"
+    },
+    {
+        "id":"3",
+        "partner":"CNN",
+        "logo":"assets/images/cnn.png"
+    }
+]
