@@ -18,7 +18,7 @@ class _HomeMapState extends State<HomeMap> {
   void initState() {
     _markers.add(
       Marker(
-        markerId: MarkerId("3.595196, 98.672226"),
+        markerId: MarkerId("24.8949, 91.8687"),
         position: _currentPosition,
         icon: BitmapDescriptor.defaultMarker,
       ),

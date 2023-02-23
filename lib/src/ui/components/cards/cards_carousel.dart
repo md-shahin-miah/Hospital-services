@@ -68,7 +68,7 @@ class CarouselCards extends StatelessWidget {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                            side: BorderSide(color: Colors.red)))),
+                            side: BorderSide(color: Colors.grey)))),
 
             onPressed: (){
               print("floating pressed!");

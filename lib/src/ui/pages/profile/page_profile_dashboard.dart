@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../../constants/constant.dart';
 import '../../widgets/profile/widget_profile_list_item.dart';
 
-
 class ProfileDashboard extends StatefulWidget {
   @override
   _ProfileDashboardState createState() => _ProfileDashboardState();
@@ -13,18 +12,18 @@ class ProfileDashboard extends StatefulWidget {
 class _ProfileDashboardState extends State<ProfileDashboard> {
   late bool read;
   bool active = true;
+
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: colorPrimary,
       body: SingleChildScrollView(
-        child: Container(
-            child: Column(
+        child: Column(
           children: <Widget>[
             Container(
               width: size.width,
               padding: EdgeInsets.fromLTRB(20, size.height * 0.07, 20, 0),
-              child: Text(
+              child: const Text(
                 "Profile",
                 style: TextStyle(
                     color: Colors.white,
@@ -43,33 +42,32 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                     margin: EdgeInsets.only(top: 50),
                     padding: EdgeInsets.only(bottom: 20, top: 80),
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.white,
-                        
-                        ),
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.white,
+                    ),
                     child: Column(
                       children: [
-                        Text(
-                          "Irfan Trianto",
+                        const Text(
+                          "Shahin miah",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         SizedBox(height: 10),
-                        Text(
-                          "Laki-laki",
+                        const Text(
+                          "Male",
                           style: TextStyle(
                               // fontWeight: FontWeight.bold
                               ),
                         ),
-                        SizedBox(height: 10),
-                        Text(
-                          "081394777888",
+                        const SizedBox(height: 10),
+                        const Text(
+                          "01788885000",
                           style: TextStyle(
                               // fontWeight: FontWeight.bold
                               ),
                         ),
                         SizedBox(height: 20),
                         Container(
-                          width: size.width * 0.6,
+                          width: size.width * 0.8,
                           padding: EdgeInsets.all(2),
                           decoration: BoxDecoration(
                               color: Colors.grey[200],
@@ -87,7 +85,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                 child: Stack(
                                   children: [
                                     Container(
-                                        width: 120,
+                                        width: 140,
                                         padding:
                                             EdgeInsets.symmetric(vertical: 10),
                                         decoration: BoxDecoration(
@@ -96,22 +94,22 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                                 : Colors.transparent,
                                             borderRadius:
                                                 BorderRadius.circular(5)),
-                                        child: Center(
+                                        child: const Center(
                                             child: Text(
-                                          "Notifikasi",
+                                          "Notifications",
                                           style: TextStyle(color: Colors.black),
                                         ))),
                                     Positioned(
                                       top: 1.0,
                                       right: 4.0,
                                       child: Container(
-                                        padding:
-                                            EdgeInsets.symmetric(horizontal: 5),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 5),
                                         decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(20),
                                             color: colorSecondary),
-                                        child: Text("2",
+                                        child: const Text("2",
                                             style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 12,
@@ -130,26 +128,26 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                 child: Stack(
                                   children: [
                                     Container(
-                                        width: 120,
-                                        padding:
-                                            EdgeInsets.symmetric(vertical: 10),
+                                        width: 140,
+                                        padding: const EdgeInsets.symmetric(
+                                            vertical: 10),
                                         decoration: BoxDecoration(
                                             color: !active
                                                 ? Colors.white
                                                 : Colors.transparent,
                                             borderRadius:
                                                 BorderRadius.circular(5)),
-                                        child: Center(
+                                        child: const Center(
                                             child: Text(
-                                          "Histori",
+                                          "History",
                                           style: TextStyle(color: Colors.black),
                                         ))),
                                     Positioned(
                                       top: 1.0,
                                       right: 4.0,
                                       child: Container(
-                                        padding:
-                                            EdgeInsets.symmetric(horizontal: 5),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 5),
                                         decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(20),
@@ -174,21 +172,21 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                 child: Column(
                                   children: [
                                     ProfileListItem(
-                                      title: "Waktunya Kontrol Nih !",
+                                      title: "It's Control Time!",
                                       subtitle:
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
                                       badge: "New",
-                                      waktu: "2 jam yang lalu",
+                                      time: "6 hours ago",
                                       read: false,
                                       done: false,
                                       type: active,
                                     ),
                                     ProfileListItem(
-                                      title: "Waktunya Kontrol Nih !",
+                                      title: "It's Control Time!",
                                       subtitle:
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
                                       badge: "New",
-                                      waktu: "2 jam yang lalu",
+                                      time: "3 hours ago",
                                       read: true,
                                       done: true,
                                       type: active,
@@ -198,7 +196,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                       subtitle:
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
                                       badge: "New",
-                                      waktu: "2 jam yang lalu",
+                                      time: "2 hours ago",
                                       read: false,
                                       done: false,
                                       type: active,
@@ -208,7 +206,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                       subtitle:
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
                                       badge: "New",
-                                      waktu: "2 jam yang lalu",
+                                      time: "2 hours ago",
                                       read: true,
                                       done: true,
                                       type: active,
@@ -222,46 +220,46 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                 child: Column(
                                   children: [
                                     ProfileListItem(
-                                      title: "DOKTOR 1",
+                                      title: "DOCTOR 1",
                                       subtitle: "ahli syaraf",
-                                      badge: "2 hari lagi",
-                                      waktu: "2 jam yang lalu",
+                                      badge: "2 more days",
+                                      time: "2 hours ago",
                                       read: false,
                                       done: false,
                                       type: active,
                                     ),
                                     ProfileListItem(
-                                      title: "DOKTOR 2",
-                                      subtitle: "ahli syaraf",
-                                      badge: "Selesai",
-                                      waktu: "2 jam yang lalu",
+                                      title: "DOCTOR 2",
+                                      subtitle: "neurologist",
+                                      badge: "Finished",
+                                      time: "2 hours ago",
                                       read: true,
                                       done: true,
                                       type: active,
                                     ),
                                     ProfileListItem(
-                                      title: "DOKTOR 3",
-                                      subtitle: "ahli syaraf",
+                                      title: "DOCTOR 3",
+                                      subtitle: "neurologist",
                                       badge: "1 hari lagi",
-                                      waktu: "2 jam yang lalu",
+                                      time: "2 hours ago",
                                       read: false,
                                       done: false,
                                       type: active,
                                     ),
                                     ProfileListItem(
-                                      title: "DOKTOR 4",
-                                      subtitle: "ahli syaraf",
-                                      badge: "Selesai",
-                                      waktu: "2 jam yang lalu",
+                                      title: "DOCTOR 4",
+                                      subtitle: "neurologist",
+                                      badge: "Finished",
+                                      time: "1 hours ago",
                                       read: true,
                                       done: true,
                                       type: active,
                                     ),
                                     ProfileListItem(
-                                      title: "DOKTOR 5",
-                                      subtitle: "ahli syaraf",
-                                      badge: "Selesai",
-                                      waktu: "2 jam yang lalu",
+                                      title: "DOCTOR 5",
+                                      subtitle: "neurologist",
+                                      badge: "Finished",
+                                      time: "4 hours ago",
                                       read: true,
                                       done: true,
                                       type: active,
@@ -293,7 +291,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
               ),
             )
           ],
-        )),
+        ),
       ),
     );
   }

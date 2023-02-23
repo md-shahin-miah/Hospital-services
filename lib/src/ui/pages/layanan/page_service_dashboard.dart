@@ -12,13 +12,13 @@ import '../../components/cards/cards_layanan.dart';
 import '../../widgets/widget_header.dart';
 
 
-class LayananDashboard extends StatefulWidget {
+class ServiceDashboard extends StatefulWidget {
   @override
-  _LayananDashboardState createState() => _LayananDashboardState();
+  _ServiceDashboardState createState() => _ServiceDashboardState();
 }
 
-class _LayananDashboardState extends State<LayananDashboard> {
-  List<Service> layananList = [];
+class _ServiceDashboardState extends State<ServiceDashboard> {
+  List<Service> servicesList = [];
   List<Event> eventList = [];
 
   void getLayanan() async {
@@ -27,7 +27,7 @@ class _LayananDashboardState extends State<LayananDashboard> {
 
     setState(() {
       for (var line in decodedJson) {
-        layananList.add(Service.fromJson(line));
+        servicesList.add(Service.fromJson(line));
       }
     });
   }
@@ -61,13 +61,13 @@ class _LayananDashboardState extends State<LayananDashboard> {
           children: [
             HeaderWidget(
               size: size,
-              title: "Layanan",
+              title: "Services",
             ),
             SizedBox(height: 20),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 20, 10),
               child: Text(
-                "Fasilitas & Layanan Terkini",
+                "Latest Facilities & Services",
                 style: TextStyle(
                     color: colorPrimary,
                     fontWeight: FontWeight.bold,
@@ -76,13 +76,13 @@ class _LayananDashboardState extends State<LayananDashboard> {
             ),
             Container(
                 height: 200,
-                margin: EdgeInsets.symmetric(horizontal: 10),
-                child: LayananButtonsWidget(list: layananList)),
-            Padding(
+                margin: const EdgeInsets.symmetric(horizontal: 10),
+                child: LayananButtonsWidget(list: servicesList)),
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: Divider(),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 20, 0),
               child: Text(
                 "Event & Promo",
@@ -93,7 +93,7 @@ class _LayananDashboardState extends State<LayananDashboard> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: EventButtonsWidget(list: eventList),
             )
           ],

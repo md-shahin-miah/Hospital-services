@@ -38,7 +38,7 @@ class AboutCards extends StatelessWidget {
                 Container(
                   height: 160,
                   width: 380,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10)
@@ -50,9 +50,9 @@ class AboutCards extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.all(10),
-                  child: Text(
-                    "Rumah Sakit Tingkat Akhir Merupakan Rumah Sakit Terbaik di Jawa Barat",
+                  margin: EdgeInsets.symmetric(vertical: 2,horizontal: 10),
+                  child: const Text(
+                    "End Level Hospital Is The Best Hospital in Sylhet",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16

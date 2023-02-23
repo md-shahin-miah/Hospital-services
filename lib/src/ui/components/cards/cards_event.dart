@@ -15,7 +15,7 @@ class EventButtonsWidget extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         child: ListView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: list.length,
             itemBuilder: (BuildContext context, int? index) {
               return EventButtonItem(
@@ -53,9 +53,16 @@ class EventButtonItem extends StatelessWidget {
             child: Container(
               height: 200,
               alignment: Alignment.bottomLeft,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.7), BlendMode.dstATop),
+                    image: AssetImage(image)),
+              ),
               child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(color: Colors.white),
+                  decoration: const BoxDecoration(color: Colors.white),
                   padding: const EdgeInsets.only(left: 15, top: 15, bottom: 15),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -64,7 +71,7 @@ class EventButtonItem extends StatelessWidget {
                     children: [
                       Text(
                         caption,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                       Text(
@@ -73,13 +80,6 @@ class EventButtonItem extends StatelessWidget {
                       )
                     ],
                   )),
-              decoration: new BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    colorFilter: ColorFilter.mode(
-                        Colors.black.withOpacity(0.7), BlendMode.dstATop),
-                    image: AssetImage(image)),
-              ),
             ),
             onTap: () {
               Navigator.push(

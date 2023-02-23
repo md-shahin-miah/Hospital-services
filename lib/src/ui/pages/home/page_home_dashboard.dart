@@ -22,10 +22,10 @@ class _HomeDashboardState extends State<HomeDashboard> {
         children: <Widget>[
           // Carousel
           HomeCarousel(),
-          Padding(
-            padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: Text(
-              "Temui Kami",
+              "Meet Us",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold
@@ -34,57 +34,57 @@ class _HomeDashboardState extends State<HomeDashboard> {
           ),
           // Maps
           HomeMaps(),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "Rumah Sakit Tingkat Akhir",
+              "Ibn Sina Hospital",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "Jl. Margacinta No. 29 \nSenin - Jumat : 08.00 - 20.00 \nSabtu : 08.00 - 17.00",
+              "Subhanighat, Sylhet 3100 \nMonday - Friday : 08.00 - 20.00 \nSaturday : 08.00 - 17.00",
             ),
           ),
-           Padding(
+           const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "\nKlinik Tingkat Akhir",
+              "\nPopular Medical Center",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "Jl. Mars Barat I No. 9 \nSenin - Jumat : 08.00 - 20.00 \nSabtu : 08.00 - 13.00",
+              "New Medical College Road, Sylhet \nMonday - Friday : 08.00 - 20.00 \nSaturday : 08.00 - 13.00",
             ),
           ),
-           Padding(
+           const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "\nBPJS",
+              "\nJRRMC sylhet",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
             child: Text(
-              "Senin - Jumat : 07.00 - 14.00, 16.00 - 19.00 \nSabtu : 07.00 - 12.00"
+              "Sunamgonj Road, Sylhet.\n Monday - Friday : 07.00 - 14.00, 16.00 - 19.00 \nSaturday : 07.00 - 12.00"
             ),
           ),
           // About
           HomeAbout(),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 30, 20, 20),
             child: Text(
-              "Berita Terbaru",
+              "Latest news",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18
@@ -93,10 +93,10 @@ class _HomeDashboardState extends State<HomeDashboard> {
           ),
           // News
           HomeNews(),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(20, 30, 20, 10),
             child: Text(
-              "Kontak & Pengaduan",
+              "Contact & Complaints",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18
@@ -106,11 +106,11 @@ class _HomeDashboardState extends State<HomeDashboard> {
           Padding(
             padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: Row(
-              children: [
+              children: const [
                 Icon(Icons.location_on_outlined),
                 SizedBox(width:10),
                 Text(
-                  "Rumah Sakit Tingkat Akhir \nJl. Margacinta No. 29",
+                  "End Level Hospital \nShibganj,sylhet ",
                 ),
               ],
             )
@@ -118,31 +118,34 @@ class _HomeDashboardState extends State<HomeDashboard> {
           Padding(
             padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: Row(
-              children: [
+              children: const [
                 Icon(Icons.email_outlined),
                 SizedBox(width:10),
                 Text(
-                  "info@smk.dev",
+                  "endlevel@med.dev",
                 ),
               ],
             )
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(20, 10, 20,30),
-            child: Row(
-              children: [
-                Icon(Icons.phone_callback_outlined),
-                SizedBox(width:10),
-                Text(
-                  "+622 7000 0000",
-                ),
-                SizedBox(width:30),
-                Icon(Icons.location_city_outlined),
-                SizedBox(width:10),
-                Text(
-                  "+622 7000 0000",
-                ),
-              ],
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: const [
+                  Icon(Icons.phone_callback_outlined),
+                  SizedBox(width:10),
+                  Text(
+                    "01788885000",
+                  ),
+                  SizedBox(width:30),
+                  Icon(Icons.location_city_outlined),
+                  SizedBox(width:10),
+                  Text(
+                    "+612 8000 0000",
+                  ),
+                ],
+              ),
             )
           ),
         ]

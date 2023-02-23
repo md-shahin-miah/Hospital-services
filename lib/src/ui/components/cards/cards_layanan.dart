@@ -22,7 +22,7 @@ class LayananButtonsWidget extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: list.length,
             itemBuilder: (BuildContext context, int index) {
-              return LayananButtonItem(
+              return ServiceButtonItem(
                 caption: list[index].nama!,
                 image: list[index].image!,
                 onClick: () {},
@@ -32,13 +32,13 @@ class LayananButtonsWidget extends StatelessWidget {
       );
 }
 
-class LayananButtonItem extends StatelessWidget {
+class ServiceButtonItem extends StatelessWidget {
   final String caption;
   final String? image;
   final VoidCallback? onClick;
   final Service layanan;
 
-  const LayananButtonItem(
+  const ServiceButtonItem(
       {required this.caption,
       required this.image,
       this.onClick,
@@ -57,30 +57,30 @@ class LayananButtonItem extends StatelessWidget {
             child: Container(
               width: 150,
               alignment: Alignment.bottomLeft,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 15, top: 15, bottom: 15),
-                child: Text(
-                  caption,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15),
-                ),
-              ),
-              decoration: new BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
                         Colors.black.withOpacity(0.8), BlendMode.dstATop),
                     image: AssetImage(image!)),
               ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 15, top: 15, bottom: 15),
+                child: Text(
+                  caption,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15),
+                ),
+              ),
             ),
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => LayananDetailPage(
-                    layanan: layanan,
+                  builder: (context) => ServiceDetailPage(
+                    service: layanan,
                 )
               ),
             );

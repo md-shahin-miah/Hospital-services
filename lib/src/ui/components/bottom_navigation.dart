@@ -6,7 +6,7 @@ import '../pages/about/page_about_app.dart';
 import '../pages/booking/page_booking_dashboard.dart';
 import '../pages/feedback/page_feedback_dashboard.dart';
 import '../pages/home/page_home_dashboard.dart';
-import '../pages/layanan/page_layanan_dashboard.dart';
+import '../pages/layanan/page_service_dashboard.dart';
 import '../pages/partner/page_partner_dashboard.dart';
 import '../pages/profile/page_profile_dashboard.dart';
 
@@ -179,7 +179,7 @@ class _MainBottomNavState extends State<MainBottomNav> {
   @override
   void initState() {
     pageList.add(HomeDashboard());
-    pageList.add(LayananDashboard());
+    pageList.add(ServiceDashboard());
     pageList.add(BookingDashboard());
     pageList.add(ProfileDashboard());
     pageList.add(AboutDashboard());
@@ -202,7 +202,7 @@ class _MainBottomNavState extends State<MainBottomNav> {
               icon: Icon(Icons.home_outlined), label: "Home"),
           BottomNavigationBarItem(
             icon: Icon(Icons.work_outline_outlined),
-            label: "Layanan",
+            label: "Services",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today_outlined),
