@@ -22,7 +22,7 @@ class _ServiceDashboardState extends State<ServiceDashboard> {
   List<Event> eventList = [];
 
   void getLayanan() async {
-    var jsonData = await rootBundle.loadString("assets/json/layanan.json");
+    var jsonData = await rootBundle.loadString("assets/json/service.json");
     var decodedJson = json.decode(jsonData);
 
     setState(() {

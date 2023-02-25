@@ -28,7 +28,7 @@ class BookingItem extends StatelessWidget {
               backgroundColor: Colors.white,
               radius: 30,
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             Expanded(
@@ -49,7 +49,7 @@ class BookingItem extends StatelessWidget {
                   Text(
                     doctor.specialist!,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
                         color: Colors.grey),

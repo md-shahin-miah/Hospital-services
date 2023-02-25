@@ -1,32 +1,32 @@
 [
     {
         "id":"1",
-        "name":"Dr. Pratama Yoga S",
-        "specialist":"Dokter Umum",
+        "name":"Mr Keast-Butler",
+        "specialist":"Orthopaedic",
         "photos":"assets/images/doctor.png"
     },
     {
         "id":"2",
-        "name":"Dr. Agung Satrio",
-        "specialist":"Spesialis Syaraf",
+        "name":"Dr Nabila Khatun",
+        "specialist":"Dermatology",
         "photos":"assets/images/doctor_2.jpg"
     },
     {
         "id":"3",
         "name":"Dr. Zanuar",
-        "specialist":"Spesialis Mata",
+        "specialist":"Rheumatology",
         "photos":"assets/images/doctor_3.jpg"
     },
     {
         "id":"1",
         "name":"Dr. Nina Nadia",
-        "specialist":"Spesialis Telinga",
+        "specialist":"Psychiatry",
         "photos":"assets/images/doctor_5.jpg"
     },
     {
         "id":"1",
-        "name":"Dr. Vladimir Putin",
-        "specialist":"Dokter Gigi",
+        "name":"Professor Dr. Patel",
+        "specialist":"Cardiology",
         "photos":"assets/images/doctor_4.jpg"
     }
 ]

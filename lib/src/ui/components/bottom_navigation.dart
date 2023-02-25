@@ -6,9 +6,10 @@ import '../pages/about/page_about_app.dart';
 import '../pages/booking/page_booking_dashboard.dart';
 import '../pages/feedback/page_feedback_dashboard.dart';
 import '../pages/home/page_home_dashboard.dart';
-import '../pages/layanan/page_service_dashboard.dart';
+
 import '../pages/partner/page_partner_dashboard.dart';
 import '../pages/profile/page_profile_dashboard.dart';
+import '../pages/services/page_service_dashboard.dart';
 
 
 class MainBottomNav extends StatefulWidget {

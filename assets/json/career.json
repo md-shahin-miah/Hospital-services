@@ -1,40 +1,40 @@
 [
     {
         "id": 1,
-        "nama": "Bidan",
-        "short_desc": "Karir yang bagus!",
-        "deskripsi": "Deskripsi",
+        "nama": "Midwife",
+        "short_desc": "Nice career!",
+        "deskripsi": "Description",
         "tanggal": "2020-02-11 07:00:00",
         "image": "assets/images/bidan.jpg"
     },
     {
         "id": 2,
-        "nama": "Perawat",
-        "short_desc": "Karir yang bagus!",
-        "deskripsi": "Deskripsi",
+        "nama": "Nurse",
+        "short_desc": "Nice career!",
+        "deskripsi": "Description",
         "tanggal": "2020-02-11 07:00:00",
         "image": "assets/images/perawat.jpg"
     },
     
     {
         "id": 3,
-        "nama": "Apoteker",
-        "short_desc": "Karir yang bagus!",
-        "deskripsi": "Deskripsi",
+        "nama": "Midwife",
+        "short_desc": "Nice career!",
+        "deskripsi": "Description",
         "tanggal": "2020-02-11 07:00:00",
         "image": "assets/images/apoteker.jpg"
     }, {
         "id": 4,
         "nama": "IT Support",
-        "short_desc": "Karir yang bagus!",
-        "deskripsi": "Deskripsi",
+        "short_desc": "Nice career!",
+        "deskripsi": "Description",
         "tanggal": "2020-02-11 07:00:00",
         "image": "assets/images/it_supp.jpg"
     }, {
         "id": 4,
         "nama": "Back-end Support",
-        "short_desc": "Karir yang bagus!",
-        "deskripsi": "Deskripsi",
+        "short_desc": "Nice career!",
+        "deskripsi": "Description",
         "tanggal": "2020-02-11 07:00:00",
         "image": "assets/images/back_end.jpg"
     }

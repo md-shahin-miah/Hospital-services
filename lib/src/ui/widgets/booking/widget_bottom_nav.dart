@@ -23,7 +23,7 @@ class BottomNavBooking extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size.width,
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(boxShadow: darkShadow, color: Colors.white),
       child: ButtonPrimary(
         buttonText: buttonText,

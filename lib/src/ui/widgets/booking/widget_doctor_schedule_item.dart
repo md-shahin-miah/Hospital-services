@@ -15,7 +15,7 @@ class ScheduleItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.symmetric(vertical: 5),
+          margin: const EdgeInsets.symmetric(vertical: 5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -24,14 +24,14 @@ class ScheduleItem extends StatelessWidget {
                 children: [
                   Text(
                     day,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.grey,
                         fontSize: 14,
                         fontWeight: FontWeight.w700),
                   ),
                   Text(
                     time,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.grey,
                         fontSize: 14,
                         fontWeight: FontWeight.w700),
@@ -42,7 +42,7 @@ class ScheduleItem extends StatelessWidget {
                 width: 150,
                 child: Text(
                   hospital,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 15,
                       fontWeight: FontWeight.w400),

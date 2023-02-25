@@ -1,26 +1,26 @@
 [
     {
         "id":"1",
-        "name":"Natt Friedman",
-        "email":"nat@github.com",
-        "kelamin":"Laki-laki",
-        "status":"Kamu",
-        "telephone":"081234567890"
+        "name":"Harry Powell",
+        "email":"harry@github.com",
+        "kelamin":"Male",
+        "status":"You",
+        "telephone":"0812745778890"
     },
     {
         "id":"2",
-        "name":"Bilie Elish",
-        "email":"bilie@gmail.com",
-        "kelamin":"Perempuan",
-        "status":"Istri",
-        "telephone":"081234567891"
+        "name":"Natasha",
+        "email":"natasha@gmail.com",
+        "kelamin":"Female",
+        "status":"Wife",
+        "telephone":"081234537831"
     },
     {
         "id":"e",
-        "name":"Adam Walker",
-        "email":"adam@gmail.com",
-        "kelamin":"Laki-laki",
-        "status":"Anak",
-        "telephone":"081234567892"
+        "name":"Smith",
+        "email":"Smith@gmail.com",
+        "kelamin":"Male",
+         "status":"Child",
+        "telephone":"08634768992"
     }
 ]

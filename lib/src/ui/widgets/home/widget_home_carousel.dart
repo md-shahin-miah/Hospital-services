@@ -7,10 +7,10 @@ import '../../../constants/constant.dart';
 import '../../components/cards/cards_carousel.dart';
 import '../../pages/about/page_about_app.dart';
 final List<String> imgLists = [
-  'assets/images/hospital_03.jpg',
-  'assets/images/hospital_03.jpg',
-  'assets/images/hospital_03.jpg',
-  'assets/images/hospital_03.jpg'
+  'assets/images/hsp1.jpg',
+  'assets/images/hsp2.jpg',
+  'assets/images/hsp3.jpg',
+  'assets/images/hsp4.jpg'
 
 ];
 class HomeCarousel extends StatelessWidget {

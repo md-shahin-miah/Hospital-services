@@ -46,7 +46,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
           padding: EdgeInsets.fromLTRB(20, 10, 20, 30),
           children: <Widget>[
             Text(
-              "Formulir Feedback Pelayanan Rumah Sakit SMKDEV",
+              "Famous Hospital Service Feedback Form",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
@@ -56,12 +56,12 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 10,
             ),
             Text(
-                "Terimakasih atas kepercayaan Bapak/Ibu dalam memakai aplikasi dan pelayanan Rumah Sakit SMKDEV. Silahkan berikan saran melalui form ini, karena setiap masukan sangat bermanfaat bagi peningkatan pelayanan dan aplikasi kami selanjutnya."),
+                "Thank you for your trust in using the Famous Hospital application and services. Please provide suggestions via this form, because each input is very useful for improving our services and further applications."),
             SizedBox(
               height: 20,
             ),
             Text(
-              "Apa yang anda rasakan saat mendapatkan pelayanan kami?",
+              "How do you feel when you get our service?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -79,7 +79,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 20,
             ),
             Text(
-              "Bagaimana pendapat anda tentang pelayanan yang kami berikan?",
+              "What do you think about the services we provide?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -97,7 +97,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 20,
             ),
             Text(
-              "Dimana kekurangan kami?",
+              "Where are we lacking?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -115,7 +115,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 20,
             ),
             Text(
-              "Bagaimana tingkat kepuasan anda terhadap pelayanan/ aplikasi yang ada?",
+              "What is your level of satisfaction with existing services/applications?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -132,7 +132,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 20,
             ),
             Text(
-              "Bagaimana tingkat kemudahan anda terhadap pelayanan/ aplikasi yang ada?",
+              "What is your level of ease with existing services/applications?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -149,7 +149,7 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
               height: 20,
             ),
             Text(
-              "Saran penyempurnaan untuk kami",
+              "Improvement suggestions for us",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,

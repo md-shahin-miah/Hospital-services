@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/service.dart';
-import '../../pages/layanan/page_layanan_detail.dart';
+import '../../pages/services/page_layanan_detail.dart';
+
 
 
 
