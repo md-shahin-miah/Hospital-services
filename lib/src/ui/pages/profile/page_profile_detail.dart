@@ -31,14 +31,14 @@ class ProfileDetail extends StatelessWidget {
             child: ListView(
               children: [
                 Text(
-                  "Kontrol Mingguan",
+                  "Weekly Control",
                   style: TextStyle(
                     color: colorPrimary,
                     fontWeight: FontWeight.bold
                   ),
                 ),
                 Text(
-                  "Waktunya Kontrol",
+                  "Time to Control",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -57,7 +57,7 @@ class ProfileDetail extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      "Kamis",
+                      "Thursday",
                       style: TextStyle(
                         color: Colors.grey,
                       ),
@@ -84,7 +84,7 @@ class ProfileDetail extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      "Rumah Sakit SMKDEV",
+                      "Famous Hospital",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),

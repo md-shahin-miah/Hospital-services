@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_management/src/constants/constant.dart';
 
 class ButtonPrimary extends StatelessWidget {
   const ButtonPrimary({
@@ -19,12 +20,12 @@ class ButtonPrimary extends StatelessWidget {
     return ElevatedButton(
       onPressed: onClicked,
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(textColor),
-          foregroundColor: MaterialStateProperty.all<Color>(color),
+          foregroundColor: MaterialStateProperty.all<Color>(textColor),
+          backgroundColor: MaterialStateProperty.all<Color>(color),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
-                  side: BorderSide(color: Colors.red)))),
+                  side: BorderSide(color: colorPrimary)))),
       child: Container(
         height: 50,
         padding: EdgeInsets.symmetric(horizontal: 45),

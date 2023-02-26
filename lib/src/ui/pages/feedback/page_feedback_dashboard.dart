@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/constant.dart';
 import '../../components/buttons/button_primary.dart';
+import '../../menuwidgets.dart';
 
 
 class FeedbackDashboard extends StatefulWidget {
@@ -30,16 +31,9 @@ class _FeedbackDashboardState extends State<FeedbackDashboard> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: colorPrimary,
         elevation: 0.0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            print('back');
-            Navigator.pop(context);
-          },
-          color: Colors.black87,
-        ),
+        leading:  MenuWidget(),
       ),
       body: Form(
         child: ListView(

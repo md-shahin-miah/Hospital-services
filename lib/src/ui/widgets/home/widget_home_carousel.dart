@@ -42,7 +42,7 @@ class HomeCarousel extends StatelessWidget {
                     Container(
                         padding: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                         child: const Text(
-                          "Overview of the Final Level Hospital",
+                          "Overview of the Famous Hospital",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28,
@@ -60,7 +60,7 @@ class HomeCarousel extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                         child: const Text(
-                          "The Final Grade Hospital is the best hospital in Sylhet",
+                          "The Famous is the best hospital in Sylhet",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,

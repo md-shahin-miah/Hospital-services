@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const colorPrimary = Color(0xFF2962FF);
-const colorSecondary = Color(0xFFFF5E20);
+const colorPrimary = Color(0xFFB00075);
+const colorSecondary = Color(0xFFEA5F29);
 const colorLabel1 = Color(0xFFF2994A);
 const colorLabel2 = Color(0xFF6FCF97);
 

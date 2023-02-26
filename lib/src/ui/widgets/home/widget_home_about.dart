@@ -48,7 +48,7 @@ class _HomeAboutState extends State<HomeAbout> {
               Padding(
                 padding: EdgeInsets.only(left: 20, top: 20),
                 child: Text(
-                  "Tentang Kami",
+                  "About Us",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class _HomeAboutState extends State<HomeAbout> {
                       child: Container(
                         padding: EdgeInsets.all(5),
                         child: Text(
-                          "Selengkapnya",
+                          "Read more",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,

@@ -47,6 +47,7 @@ class _BookingDashboardState extends State<BookingDashboard> {
           HeaderWidget(
             size: size,
             title: "Booking",
+
           ),
           doctorList.length == 0
               ? Container(

@@ -49,7 +49,7 @@ class _NewsCardsState extends State<NewsCards> {
                     height: 115,
                     width: 200,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(10),
                           topRight: Radius.circular(10)),
                       image: DecorationImage(

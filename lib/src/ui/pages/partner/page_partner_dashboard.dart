@@ -9,6 +9,7 @@ import '../../../models/career.dart';
 import '../../../models/partner.dart';
 import '../../components/cards/cards_career.dart';
 import '../../components/cards/cards_partner.dart';
+import '../../menuwidgets.dart';
 
 
 class PartnerDashboard extends StatefulWidget {
@@ -70,14 +71,7 @@ class _PartnerDashboardState extends State<PartnerDashboard> {
         ),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            print('back');
-            Navigator.pop(context);
-          },
-          color: Colors.black87,
-        ),
+        leading:  MenuWidget(),
       ),
       body: ListView(
         padding: EdgeInsets.all(20),

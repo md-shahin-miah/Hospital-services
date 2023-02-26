@@ -13,10 +13,10 @@ packages:
     dependency: "direct main"
     description:
       name: badges
-      sha256: "47992a2c8c56aca714470c11e80260c959d3df1b32574b62c1988ea537c12960"
+      sha256: "461031a60efbb95276f52107f63d5d45008b5ca1eb7f8ca440cadda9ec2143b0"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.0"
+    version: "3.0.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -123,6 +123,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_zoom_drawer:
+    dependency: "direct main"
+    description:
+      name: flutter_zoom_drawer
+      sha256: "93c4f2cfe1edfe2f9e48b94a7f9538520d2f2593e202b8e89c394b7d27137a8e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.3"
   google_maps_flutter:
     dependency: "direct main"
     description:
@@ -207,10 +215,10 @@ packages:
     dependency: "direct main"
     description:
       name: palette_generator
-      sha256: "8edfc37056a0af212fb96ef7e7d3b3ef0ae997d6c75474c3b9bdbee473559152"
+      sha256: "0e3cd6974e10b1434dcf4cf779efddb80e2696585e273a2dbede6af52f94568d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.3"
+    version: "0.3.3+2"
   path:
     dependency: transitive
     description:

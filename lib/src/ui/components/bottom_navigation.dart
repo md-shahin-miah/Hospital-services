@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../constants/constant.dart';
 import '../pages/about/page_about_app.dart';
 import '../pages/booking/page_booking_dashboard.dart';
-import '../pages/feedback/page_feedback_dashboard.dart';
 import '../pages/home/page_home_dashboard.dart';
 
 import '../pages/partner/page_partner_dashboard.dart';
@@ -43,131 +42,131 @@ class _MainBottomNavState extends State<MainBottomNav> {
           _selectedIndex = index;
         });
         break;
-      case 4:
-        await showMenu(
-          context: context,
-          position: RelativeRect.fromLTRB(MediaQuery.of(context).size.width,
-            MediaQuery.of(context).size.height * 0.7, 0.0, 0.0),
-          elevation: 0,
-          color: Colors.transparent,
-          items: [
-            PopupMenuItem(
-              value: null,
-              child: Container(
-                margin: EdgeInsets.all(2),
-                width: 160,
-                child: ElevatedButton(
-                  style: ButtonStyle(
-
-                      foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              side: BorderSide(color: Colors.red)))),
-
-                    onPressed: () {
-                      print("tentang kami pressed");
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => AboutDashboard()),
-                      );
-                    },
-
-                    child: Row(
-                      children: const [
-                        Text(
-                          "Tentang Kami",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        SizedBox(width: 5),
-                        Icon(
-                          Icons.group_outlined,
-                          color: Colors.white,
-                        )
-                    ],
-                  ),
-                ),
-              )
-            ),
-            PopupMenuItem(
-              child: Container(
-                margin: EdgeInsets.all(2),
-                width: 180,
-
-                child: ElevatedButton(
-                  style: ButtonStyle(
-
-                      foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                             ))),
-
-                  onPressed: () {
-                    print("partner & career pressed");
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => PartnerDashboard()),
-                    );
-                  },
-
-                  child: Row(
-                    children: const [
-                      Text(
-                        "Partner & Career",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      SizedBox(width: 5),
-                      Icon(
-                        Icons.work_outline,
-                        color: Colors.white,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            PopupMenuItem(
-              child: Container(
-                margin: EdgeInsets.all(1),
-                width: 130,
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                      foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ))),
-
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => FeedbackDashboard()),
-                    );
-                  },
-
-                  child: Row(
-                    children: const [
-                      Text(
-                        "Feedback",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      SizedBox(width: 5),
-                      Icon(
-                        Icons.feedback_outlined,
-                        color: Colors.white,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ],
-        );
-        break;
+      // case 4:
+      //   await showMenu(
+      //     context: context,
+      //     position: RelativeRect.fromLTRB(MediaQuery.of(context).size.width,
+      //       MediaQuery.of(context).size.height * 0.7, 0.0, 0.0),
+      //     elevation: 0,
+      //     color: Colors.transparent,
+      //     items: [
+      //       PopupMenuItem(
+      //         value: null,
+      //         child: Container(
+      //           margin: EdgeInsets.all(2),
+      //           width: 160,
+      //           child: ElevatedButton(
+      //             style: ButtonStyle(
+      //
+      //                 foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
+      //                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      //                     RoundedRectangleBorder(
+      //                         borderRadius: BorderRadius.circular(20),
+      //                         side: BorderSide(color: Colors.red)))),
+      //
+      //               onPressed: () {
+      //                 print("about us pressed");
+      //                 Navigator.push(
+      //                   context,
+      //                   MaterialPageRoute(
+      //                     builder: (context) => AboutDashboard()),
+      //                 );
+      //               },
+      //
+      //               child: Row(
+      //                 children: const [
+      //                   Text(
+      //                     "About Us",
+      //                     style: TextStyle(color: Colors.white),
+      //                   ),
+      //                   SizedBox(width: 5),
+      //                   Icon(
+      //                     Icons.group_outlined,
+      //                     color: Colors.white,
+      //                   )
+      //               ],
+      //             ),
+      //           ),
+      //         )
+      //       ),
+      //       PopupMenuItem(
+      //         child: Container(
+      //           margin: EdgeInsets.all(2),
+      //           width: 180,
+      //
+      //           child: ElevatedButton(
+      //             style: ButtonStyle(
+      //
+      //                 foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
+      //                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      //                     RoundedRectangleBorder(
+      //                         borderRadius: BorderRadius.circular(20),
+      //                        ))),
+      //
+      //             onPressed: () {
+      //               print("partner & career pressed");
+      //               Navigator.push(
+      //                 context,
+      //                 MaterialPageRoute(
+      //                   builder: (context) => PartnerDashboard()),
+      //               );
+      //             },
+      //
+      //             child: Row(
+      //               children: const [
+      //                 Text(
+      //                   "Partner & Career",
+      //                   style: TextStyle(color: Colors.white),
+      //                 ),
+      //                 SizedBox(width: 5),
+      //                 Icon(
+      //                   Icons.work_outline,
+      //                   color: Colors.white,
+      //                 )
+      //               ],
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //       PopupMenuItem(
+      //         child: Container(
+      //           margin: EdgeInsets.all(1),
+      //           width: 130,
+      //           child: ElevatedButton(
+      //             style: ButtonStyle(
+      //                 foregroundColor: MaterialStateProperty.all<Color>(colorPrimary),
+      //                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      //                     RoundedRectangleBorder(
+      //                       borderRadius: BorderRadius.circular(20),
+      //                     ))),
+      //
+      //             onPressed: () {
+      //               Navigator.push(
+      //                 context,
+      //                 MaterialPageRoute(
+      //                   builder: (context) => FeedbackDashboard()),
+      //               );
+      //             },
+      //
+      //             child: Row(
+      //               children: const [
+      //                 Text(
+      //                   "Feedback",
+      //                   style: TextStyle(color: Colors.white),
+      //                 ),
+      //                 SizedBox(width: 5),
+      //                 Icon(
+      //                   Icons.feedback_outlined,
+      //                   color: Colors.white,
+      //                 )
+      //               ],
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //     ],
+      //   );
+      //   break;
       default:
         setState(() {
           _selectedIndex = index;
@@ -183,9 +182,7 @@ class _MainBottomNavState extends State<MainBottomNav> {
     pageList.add(ServiceDashboard());
     pageList.add(BookingDashboard());
     pageList.add(ProfileDashboard());
-    pageList.add(AboutDashboard());
-    pageList.add(PartnerDashboard());
-    pageList.add(FeedbackDashboard());
+
     super.initState();
   }
 
@@ -211,8 +208,7 @@ class _MainBottomNavState extends State<MainBottomNav> {
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.person_outline_outlined), label: 'Profile'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.more_vert_rounded), label: 'More'),
+
         ],
         unselectedItemColor: Colors.grey[400],
         selectedItemColor: colorPrimary,

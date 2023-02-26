@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/constant.dart';
+import '../../menuwidgets.dart';
 
 
 
@@ -18,29 +19,22 @@ class _AboutDashboardState extends State<AboutDashboard> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black),
-        title: Text(
-          "Tentang Kami",
+        title: const Text(
+          "About Us",
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
             fontSize: 20
           ),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            print('back');
-            Navigator.pop(context);
-          },
-          color: Colors.black87,
-        ),
+        leading: MenuWidget(),
       ),
       body: Container(
         child: Column(
           children: [
             Container(
               height:200,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image:AssetImage('assets/images/about.jpg'),
                   fit: BoxFit.cover
@@ -51,9 +45,9 @@ class _AboutDashboardState extends State<AboutDashboard> {
               padding: EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children:[
+                children:const [
                   Text(
-                    "Sekilas Tentang RS Tingkat Akhir",
+                    "Overview of the Famous Hospital",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
@@ -62,10 +56,11 @@ class _AboutDashboardState extends State<AboutDashboard> {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    "RS Tingkat Akhir merupakan rumah sakit yang rumah sakit terbaik di Jawa Barat yang didukung oleh tenaga kerja terbaik se-Indonesia.",
+                    "The Famous Hospital is the best hospital in Sylhet, supported by the best workforce in Bangladesh.",
                   ),
                   SizedBox(height: 10),
-                  Text("Didirikan Oleh:\n- Zanuar Ekaputra\n- Agung Satrio\n- Pratama Yoga")
+                  Text(
+                      "Established By:\n- Shahin miah \n- Sattbroto\n- Ziadul islam")
                 ]
               )
             )

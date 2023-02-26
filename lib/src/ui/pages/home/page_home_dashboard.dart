@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import '../../menuwidgets.dart';
 import '../../widgets/home/widget_home_about.dart';
 import '../../widgets/home/widget_home_carousel.dart';
 import '../../widgets/home/widget_home_maps.dart';
@@ -18,6 +19,10 @@ class _HomeDashboardState extends State<HomeDashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: Text('Main Screen'),
+          leading: MenuWidget(),
+        ),
       body: ListView(
         children: <Widget>[
           // Carousel

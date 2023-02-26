@@ -108,13 +108,13 @@ class _HomeMapsState extends State<HomeMaps> {
                     Column(
                       children: [
                         Text(
-                          "RS. Tingkat Akhir",
+                          "Famous Hospital",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
 
                           ),
                         ),
-                        Text("Jl. Margacinta No. 29,\nBuah Batu, Bandung")
+                        Text("Old Medical Road,\nKajol Shah , Sylhet")
                       ],
                     )
                   ],
