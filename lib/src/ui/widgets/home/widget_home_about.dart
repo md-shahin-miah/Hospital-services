@@ -37,7 +37,7 @@ class _HomeAboutState extends State<HomeAbout> {
   Widget build(BuildContext context) {
     return Container(
       height: 560,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: colorPrimary,
       ),
       child: Column(
@@ -45,7 +45,7 @@ class _HomeAboutState extends State<HomeAbout> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 20, top: 20),
                 child: Text(
                   "About Us",
@@ -63,7 +63,7 @@ class _HomeAboutState extends State<HomeAbout> {
                     child: InkWell(
                       child: Container(
                         padding: EdgeInsets.all(5),
-                        child: Text(
+                        child: const Text(
                           "Read more",
                           style: TextStyle(
                             color: Colors.white,
@@ -85,12 +85,12 @@ class _HomeAboutState extends State<HomeAbout> {
             ],
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 10),
             child: AboutCards(),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-            child: Container(
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+            child: SizedBox(
                 height: 200,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,

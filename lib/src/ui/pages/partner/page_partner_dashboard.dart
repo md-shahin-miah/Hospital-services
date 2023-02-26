@@ -57,8 +57,8 @@ class _PartnerDashboardState extends State<PartnerDashboard> {
   @override
   void initState() {
     super.initState();
-    this.getDummyPartner();
-    this.getCareers();
+    getDummyPartner();
+    getCareers();
   }
 
   @override
@@ -67,20 +67,20 @@ class _PartnerDashboardState extends State<PartnerDashboard> {
       appBar: AppBar(
         title: const Text(
           "Partner & Career",
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.transparent,
+        backgroundColor:colorPrimary,
         elevation: 0.0,
-        leading:  MenuWidget(),
+        leading:  const MenuWidget(),
       ),
       body: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         children: [
           Container(
             alignment:
                 Alignment.center, // Make the hint in the middle vertically
             height: 45,
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
@@ -105,18 +105,18 @@ class _PartnerDashboardState extends State<PartnerDashboard> {
                   ),
                 ),
                 IconButton(
-                    icon: Icon(Icons.search, color: colorPrimary),
+                    icon: const Icon(Icons.search, color: colorPrimary),
                     onPressed: () {})
               ],
             ),
           ),
-          SizedBox(height: 10),
-          Text(
+          const SizedBox(height: 10),
+          const Text(
             "Partner",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
-          SizedBox(height: 10),
-          Container(
+          const SizedBox(height: 10),
+          SizedBox(
             height: 120,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -128,13 +128,13 @@ class _PartnerDashboardState extends State<PartnerDashboard> {
               itemCount: partnerList == null ? 0 : partnerList.length,
             ),
           ),
-          SizedBox(height: 10),
-          Text(
+          const SizedBox(height: 10),
+          const Text(
             "Career",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
           Padding(
-              padding: EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: CareerButtonsWidget(list: careerList))
         ],
       ),

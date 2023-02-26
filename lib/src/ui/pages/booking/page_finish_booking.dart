@@ -23,29 +23,29 @@ class FinishedBooking extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Icon(Icons.check_circle, color: Colors.white, size: 150),
-                SizedBox(height: 6),
-                Text("Booking Sukses !",
+                const Icon(Icons.check_circle, color: Colors.white, size: 150),
+                const SizedBox(height: 6),
+                const Text("Booking Successful!",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 25)),
-                SizedBox(height: 30),
-                Text("Kode booking anda",
+                const SizedBox(height: 30),
+                const Text("Your booking code",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
                         fontSize: 13)),
                 Text(bookingCode!,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 25)),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                       text:
-                          "Customer Service kami akan menghubungi anda untuk konfirmasi selanjutnya.",
+                          "Our Customer Service will contact you for further confirmation.",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           color: Colors.white,
@@ -57,16 +57,16 @@ class FinishedBooking extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 40, right: 20, left: 20),
+            margin: const EdgeInsets.only(bottom: 40, right: 20, left: 20),
             child: Column(
               children: [
                 ButtonPrimary(
-                  buttonText: "Lihat Histori",
+                  buttonText: "View History",
                   color: Colors.white,
                   textColor: colorPrimary,
                   onClicked: () {},
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 GestureDetector(
                   onTap: () {
                     Navigator.pushReplacement(
@@ -74,7 +74,7 @@ class FinishedBooking extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (BuildContext context) => MyApp()));
                   },
-                  child: Text("Kembali ke Home",
+                  child: const Text("Return to Home",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w400,

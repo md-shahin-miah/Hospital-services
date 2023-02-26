@@ -11,14 +11,14 @@ class ProfileDetail extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0.0,
             leading: IconButton(
-              icon: Icon(Icons.arrow_back_ios),
+              icon: const Icon(Icons.arrow_back_ios),
               onPressed: () {
                 print('back');
                 Navigator.pop(context);
               },
               color: Colors.black87,
             ),
-            title: Text('Detail',
+            title: const Text('Detail',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 24,
@@ -30,21 +30,21 @@ class ProfileDetail extends StatelessWidget {
             padding: EdgeInsets.all(20),
             child: ListView(
               children: [
-                Text(
+                const Text(
                   "Weekly Control",
                   style: TextStyle(
                     color: colorPrimary,
                     fontWeight: FontWeight.bold
                   ),
                 ),
-                Text(
+                const Text(
                   "Time to Control",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Text(
+                const Text(
                   "06 Agustus 2020",
                   style: TextStyle(
                     fontSize: 18,
@@ -55,7 +55,7 @@ class ProfileDetail extends StatelessWidget {
             Row(
               children: [
                 Column(
-                  children: [
+                  children: const [
                     Text(
                       "Thursday",
                       style: TextStyle(
@@ -72,7 +72,7 @@ class ProfileDetail extends StatelessWidget {
                   ],  
                 ),
                 SizedBox(width: 10),
-                Text(
+                const Text(
                   "|",
                   style: TextStyle(
                     fontSize: 72,
@@ -82,20 +82,20 @@ class ProfileDetail extends StatelessWidget {
                 Icon(Icons.location_on_outlined),
                 SizedBox(width: 10),
                 Column(
-                  children: [
+                  children: const [
                     Text(
                       "Famous Hospital",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text("Jl. Margacinta No. 29"),
+                    Text("Kajol Shah road, Sylhet "),
                   ],  
                 )                
               ],
             ),
             SizedBox(height:10),
-            Text("Amet - minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."),
+            const Text("Amet - minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."),
           ],
         ),
       ),

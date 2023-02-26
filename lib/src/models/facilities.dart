@@ -5,42 +5,42 @@
 import 'package:meta/meta.dart';
 import 'dart:convert';
 
-class Fasilitas {
-    Fasilitas({
+class Facilities {
+    Facilities({
         required this.id,
-        required this.nama,
+        required this.name,
         required this.shortDesc,
-        required this.deskripsi,
-        required this.tanggal,
+        required this.description,
+        required this.date,
         required this.image,
     });
 
     int id;
-    String nama;
+    String name;
     String shortDesc;
-    String deskripsi;
-    DateTime tanggal;
+    String description;
+    DateTime date;
     String image;
 
-    factory Fasilitas.fromRawJson(String str) => Fasilitas.fromJson(json.decode(str));
+    factory Facilities.fromRawJson(String str) => Facilities.fromJson(json.decode(str));
 
     String toRawJson() => json.encode(toJson());
 
-    factory Fasilitas.fromJson(Map<String, dynamic> json) => Fasilitas(
+    factory Facilities.fromJson(Map<String, dynamic> json) => Facilities(
         id: json["id"],
-        nama: json["nama"],
+        name: json["name"],
         shortDesc: json["short_desc"],
-        deskripsi: json["deskripsi"],
-        tanggal: DateTime.parse(json["tanggal"]),
+        description: json["description"],
+        date: DateTime.parse(json["date"]),
         image: json["image"],
     );
 
     Map<String, dynamic> toJson() => {
         "id": id,
-        "nama": nama,
+        "name": name,
         "short_desc": shortDesc,
-        "deskripsi": deskripsi,
-        "tanggal": tanggal.toIso8601String(),
+        "description": description,
+        "date": date.toIso8601String(),
         "image": image,
     };
 }

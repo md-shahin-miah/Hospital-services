@@ -16,7 +16,7 @@ class AboutCards extends StatelessWidget {
           BoxShadow(
             color: Colors.black.withOpacity(0.2),
             blurRadius: 6,
-            offset: Offset(1, 1))
+            offset: const Offset(1, 1))
           ]
         ),
       child: InkWell(

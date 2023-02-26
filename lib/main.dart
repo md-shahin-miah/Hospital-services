@@ -29,13 +29,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
       home: ZoomDrawer(
-        borderRadius: 5,
+        borderRadius: 25,
         angle: -5,
         androidCloseOnBackTap: true,
         showShadow: false,
         mainScreenAbsorbPointer: true,
         mainScreenTapClose: true,
-        menuBackgroundColor: Colors.purple,
+        menuBackgroundColor: Colors.teal,
         style: DrawerStyle.defaultStyle,
         slideWidth: 200,
         menuScreenWidth: 280,
@@ -56,8 +56,8 @@ class _MyAppState extends State<MyApp> {
         return MainBottomNav();
       case MenuItemsGenerate.dashboard:
         return DashboardMain();
-      case MenuItemsGenerate.aboutus:
-        return AboutDashboard();
+      // case MenuItemsGenerate.aboutus:
+      //   return AboutDashboard();
       case MenuItemsGenerate.partners:
         return PartnerDashboard();
       case MenuItemsGenerate.feedback:

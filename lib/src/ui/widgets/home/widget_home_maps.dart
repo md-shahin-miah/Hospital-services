@@ -17,7 +17,7 @@ class _HomeMapsState extends State<HomeMaps> {
   void initState() {
     _markers.add(
       Marker(
-        markerId: MarkerId("3.595196, 98.672226"),
+        markerId: const MarkerId("3.595196, 98.672226"),
         position: _currentPosition,
         icon: BitmapDescriptor.defaultMarker,
       ),
@@ -28,7 +28,7 @@ class _HomeMapsState extends State<HomeMaps> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 0, 20, 10),
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
       child: Stack(
         children: [
           Container(
@@ -37,7 +37,7 @@ class _HomeMapsState extends State<HomeMaps> {
               boxShadow: [BoxShadow(
                 color: Colors.black.withOpacity(0.2),
                 blurRadius: 6,
-                offset: Offset(1,1)
+                offset: const Offset(1,1)
               )]
             ),
             child: ClipRRect(
@@ -83,7 +83,7 @@ class _HomeMapsState extends State<HomeMaps> {
                 borderRadius: BorderRadius.circular(10)
               ),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   children: [
                     Container(
@@ -103,10 +103,10 @@ class _HomeMapsState extends State<HomeMaps> {
                         child: Image.asset('assets/images/map_hos.jpg'),
                       ),
                     ),
-                    SizedBox(width:10),
+                    const SizedBox(width:10),
                     // Text("RS. Tingkat Akhir"),
                     Column(
-                      children: [
+                      children: const [
                         Text(
                           "Famous Hospital",
                           style: TextStyle(

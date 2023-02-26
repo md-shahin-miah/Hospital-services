@@ -7,14 +7,14 @@ import '../models/menuitems.dart';
 class MenuItemsGenerate {
   static const payment = MenuItems('Home', Icons.home);
   static const dashboard = MenuItems('Dashboard', Icons.dashboard);
-  static const aboutus =  MenuItems('About us', Icons.people);
-  static const partners =  MenuItems('Partners and career', Icons.nature_people_outlined);
+  // static const aboutus =  MenuItems('About us', Icons.people);
+  static const partners =  MenuItems('Partners and job', Icons.nature_people_outlined);
   static const feedback =  MenuItems('Feedback', Icons.people);
 
   static const all = <MenuItems>[
     payment,
     dashboard,
-    aboutus,
+    // aboutus,
     partners,
     feedback,
   ];
@@ -38,7 +38,7 @@ class _MenuScreenState extends State<MenuScreen> {
     return Theme(
       data: ThemeData.dark(),
       child: Scaffold(
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.teal,
           body: SafeArea(
               child: Column(children: <Widget>[
             Spacer(),

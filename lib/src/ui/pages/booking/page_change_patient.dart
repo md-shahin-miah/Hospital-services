@@ -47,13 +47,13 @@ class _ChangePatientState extends State<ChangePatient> {
         iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         shadowColor: Colors.black38,
-        title: Text(
-          "Ganti Pasien",
+        title: const Text(
+          "Change Patient",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),
       body: userList!.length == 0
-          ? CircularProgressIndicator()
+          ? const CircularProgressIndicator()
           : Column(
               children: [
                 LimitedBox(
@@ -64,29 +64,29 @@ class _ChangePatientState extends State<ChangePatient> {
                       itemBuilder: (context, index) => PatientListItem(
                             user: userList![index],
                             selected:
-                                userList![index].id == this.id ? true : false,
+                                userList![index].id == id ? true : false,
                             callbackFunction: () {
                               setState(() {
-                                this.id = userList![index].id;
+                                id = userList![index].id;
                               });
                               Navigator.pop(context, userList![index]);
                             },
                           )),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
                     showFormBooking(size, false, context, () {});
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(
                         Icons.add,
                         color: colorPrimary,
                       ),
                       Text(
-                        "Tambah Baru",
+                        "New Add",
                         style: TextStyle(
                             color: colorPrimary,
                             fontWeight: FontWeight.w600,
@@ -116,7 +116,7 @@ class PatientListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         child: GestureDetector(
           onTap: callbackFunction,
           child: Row(
@@ -125,23 +125,23 @@ class PatientListItem extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(this.user!.name!,
-                      style: TextStyle(
+                  Text(user!.name!,
+                      style: const TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 16)),
                   Text(
-                    "Jenis Kelamin: ${this.user!.kelamin!}",
-                    style: TextStyle(color: Colors.grey),
+                    "Gender: ${user!.sex!}",
+                    style: const TextStyle(color: Colors.grey),
                   ),
                   Text(
-                    "Status : ${this.user!.status!}",
-                    style: TextStyle(color: Colors.grey),
+                    "Status : ${user!.status!}",
+                    style: const TextStyle(color: Colors.grey),
                   ),
                 ],
               ),
               selected!
-                  ? Icon(
+                  ? const Icon(
                       Icons.check_circle_rounded,
                       color: colorPrimary,
                       size: 35,

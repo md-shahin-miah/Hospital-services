@@ -25,7 +25,7 @@ class CarouselCards extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(10),
                 child: const Text(
-                  "Sekilas Tentang RS Tingkat Akhir",
+                  "Overview of the Famous Hospital",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
@@ -43,7 +43,7 @@ class CarouselCards extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(10),
                 child: const Text(
-                  "RS Tingkat Akhir merupakan rumah sakit yang rumah sakit terbaik di Jawa Barat yang didukung oleh tenaga kerja terbaik se-Indonesia.",
+                  "The Famous Hospital is the best hospital in Sylhet, supported by the best workforce in Bangladesh.",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14,

@@ -7,17 +7,17 @@ import 'dart:convert';
 class Service {
   Service({
     required this.id,
-    required this.nama,
+    required this.name,
     required this.shortDesc,
-    required this.deskripsi,
+    required this.description,
     required this.image,
   });
 
   int? id;
-  String? nama;
+  String? name;
   String? shortDesc;
-  String? deskripsi;
-  DateTime? tanggal;
+  String? description;
+  DateTime? date;
   String? image;
 
   factory Service.fromRawJson(String str) => Service.fromJson(json.decode(str));
@@ -26,17 +26,17 @@ class Service {
 
   factory Service.fromJson(Map<String, dynamic> json) => Service(
         id: json["id"],
-        nama: json["nama"],
+        name: json["name"],
         shortDesc: json["short_desc"],
-        deskripsi: json["deskripsi"],
+        description: json["description"],
         image: json["image"],
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
-        "nama": nama,
+        "name": name,
         "short_desc": shortDesc,
-        "deskripsi": deskripsi,
+        "description": description,
         "image": image,
       };
 }

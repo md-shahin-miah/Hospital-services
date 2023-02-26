@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:hospital_management/src/constants/constant.dart';
 
 import '../../menuwidgets.dart';
 import '../../widgets/home/widget_home_about.dart';
@@ -20,6 +21,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: colorPrimary,
           title: Text('Main Screen'),
           leading: MenuWidget(),
         ),
@@ -42,7 +44,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
           const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "Ibn Sina Hospital",
+              "Dr Sattobroto",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -57,7 +59,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
            const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "\nPopular Medical Center",
+              "\nDr. Ibrahim ali",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -72,7 +74,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
            const Padding(
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Text(
-              "\nJRRMC sylhet",
+              "\nDr Saptarshi",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -109,19 +111,19 @@ class _HomeDashboardState extends State<HomeDashboard> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: Row(
               children: const [
                 Icon(Icons.location_on_outlined),
                 SizedBox(width:10),
                 Text(
-                  "End Level Hospital \nShibganj,sylhet ",
+                  "Famous Hospital \nShibganj,sylhet ",
                 ),
               ],
             )
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: Row(
               children: const [
                 Icon(Icons.email_outlined),
@@ -133,7 +135,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
             )
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(20, 10, 20,30),
+            padding: const EdgeInsets.fromLTRB(20, 10, 20,30),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(

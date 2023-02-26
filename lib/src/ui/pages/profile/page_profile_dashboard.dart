@@ -223,7 +223,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                   children: [
                                     ProfileListItem(
                                       title: "DOCTOR 1",
-                                      subtitle: "ahli syaraf",
+                                      subtitle: "neurologist",
                                       badge: "2 more days",
                                       time: "2 hours ago",
                                       read: false,
@@ -242,7 +242,7 @@ class _ProfileDashboardState extends State<ProfileDashboard> {
                                     ProfileListItem(
                                       title: "DOCTOR 3",
                                       subtitle: "neurologist",
-                                      badge: "1 hari lagi",
+                                      badge: "1 more hour",
                                       time: "2 hours ago",
                                       read: false,
                                       done: false,

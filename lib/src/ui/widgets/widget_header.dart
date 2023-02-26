@@ -22,7 +22,7 @@ class HeaderWidget extends StatelessWidget {
         children: [
           Container(
             height: size.height * 0.25 - 23,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: colorPrimary,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),
@@ -33,7 +33,7 @@ class HeaderWidget extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 50, bottom: 20),
                 child: Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
@@ -50,8 +50,8 @@ class HeaderWidget extends StatelessWidget {
               alignment:
                   Alignment.center, // Make the hint in the middle vertically
               height: 54,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(25),
@@ -75,7 +75,7 @@ class HeaderWidget extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                      icon: Icon(Icons.search, color: colorPrimary),
+                      icon: const Icon(Icons.search, color: colorPrimary),
                       onPressed: () {})
                 ],
               ),

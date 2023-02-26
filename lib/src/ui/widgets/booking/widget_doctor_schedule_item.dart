@@ -38,7 +38,7 @@ class ScheduleItem extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
+              SizedBox(
                 width: 150,
                 child: Text(
                   hospital,

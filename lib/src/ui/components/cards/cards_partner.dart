@@ -15,8 +15,8 @@ class _PartnerCardsState extends State<PartnerCards> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 10, bottom: 5),
-      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.only(right: 10, bottom: 5),
+      padding: const EdgeInsets.all(5),
       height: 120,
       width: 140,
       decoration: BoxDecoration(
@@ -25,7 +25,7 @@ class _PartnerCardsState extends State<PartnerCards> {
         boxShadow: [BoxShadow(
           color: Colors.black.withOpacity(0.2),
           blurRadius: 6,
-          offset: Offset(1,1)
+          offset: const Offset(1,1)
         )]
       ),
       child: InkWell(
@@ -37,7 +37,7 @@ class _PartnerCardsState extends State<PartnerCards> {
           height: 120,
           width:140,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(10),
             topRight: Radius.circular(10)
           ),

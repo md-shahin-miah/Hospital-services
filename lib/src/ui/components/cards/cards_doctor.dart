@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/home_doctor.dart';
-import '../../pages/booking/page_dokter_detail.dart';
+import '../../pages/booking/page_doctor_detail.dart';
 
 
 class DoctorCards extends StatefulWidget {

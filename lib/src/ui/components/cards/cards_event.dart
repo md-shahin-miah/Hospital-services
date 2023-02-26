@@ -19,7 +19,7 @@ class EventButtonsWidget extends StatelessWidget {
             itemCount: list.length,
             itemBuilder: (BuildContext context, int? index) {
               return EventButtonItem(
-                caption: list[index!].nama,
+                caption: list[index!].name,
                 image: list[index].image,
                 onClick: () {},
                 event: list[index],

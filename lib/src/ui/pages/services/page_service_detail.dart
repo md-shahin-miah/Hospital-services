@@ -42,12 +42,12 @@ class _ServiceDetailPageState extends State<ServiceDetailPage> {
                         style: TextStyle(color: Colors.white)),
                   ),
                   Text(
-                    widget.service!.nama!,
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    widget.service!.name!,
+                    style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   const Text("8 Augusts 2020", style: TextStyle(color: Colors.grey)),
                   Container(
-                    margin: EdgeInsets.only(top: 20),
+                    margin: const EdgeInsets.only(top: 20),
                     child: const Text(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus purus vitae pulvinar fermentum. Suspendisse vulputate at diam eget rhoncus. Maecenas vel gravida nisl. Etiam faucibus nibh eu orci pharetra placerat. Donec quis arcu ut orci pellentesque scelerisque. Etiam rutrum et sapien et posuere. Nam accumsan lorem lacus, euismod pretium metus dignissim eu. Integer in felis sem. Vivamus nec massa lorem. Etiam imperdiet leo ut libero posuere interdum. Etiam varius magna quis nisl egestas, porta porta nunc congue. Suspendisse in malesuada nisl. Quisque rutrum cursus varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus purus vitae pulvinar fermentum. Suspendisse vulputate at diam eget rhoncus. Maecenas vel gravida nisl. Etiam faucibus nibh eu orci pharetra placerat. Donec quis arcu ut orci pellentesque scelerisque. Etiam rutrum et sapien et posuere. Nam accumsan lorem lacus, euismod pretium metus dignissim eu. Integer in felis sem. Vivamus nec massa lorem. Etiam imperdiet leo ut libero posuere interdum. Etiam varius magna quis nisl egestas, porta porta nunc congue. Suspendisse in malesuada nisl. Quisque rutrum cursus varius."),
                   )

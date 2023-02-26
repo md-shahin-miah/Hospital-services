@@ -9,7 +9,7 @@ class ArticleDetailPage extends StatefulWidget {
   final Event? event;
   final News? news;
 
-  const ArticleDetailPage({Key? key,  this.event,  this.news}) : super(key: key);
+  const ArticleDetailPage({Key? key, this.event, this.news}) : super(key: key);
 
   @override
   _ArticleDetailPageState createState() => _ArticleDetailPageState();
@@ -27,63 +27,78 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
               pinned: true,
               elevation: 0,
               backgroundColor: Colors.white,
-              iconTheme: IconThemeData(color: Colors.black),
+              iconTheme: const IconThemeData(color: Colors.black),
               flexibleSpace: FlexibleSpaceBar(
                   background: Image.asset(
-                widget.event != null ? widget.event!.image! : widget.news!.image!,
+                widget.event != null
+                    ? widget.event!.image
+                    : widget.news!.image!,
                 fit: BoxFit.cover,
               ))),
           SliverToBoxAdapter(
             child: Container(
-                padding: EdgeInsets.all(20),
                 child: widget.news == null
-                    ? Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Chip(
-                            padding: EdgeInsets.all(0),
-                            backgroundColor: Colors.deepPurple,
-                            label: Text('EVENT & PROMO',
-                                style: TextStyle(color: Colors.white)),
-                          ),
-                          Text(
-                            widget.event!.nama!,
-                            style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold),
-                          ),
-                          Text("${widget.event!.tanggal!}",
-                              style: TextStyle(color: Colors.grey)),
-                          Container(
-                            margin: EdgeInsets.only(top: 20),
-                            child: Text(widget.event!.deskripsi!),
-                          )
-                        ],
+                    ? Container(
+                  padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Chip(
+                              padding: EdgeInsets.all(0),
+                              backgroundColor: Colors.deepPurple,
+                              label: Text('EVENT & PROMO',
+                                  style: TextStyle(color: Colors.white)),
+                            ),
+                            Text(
+                              widget.event!.name,
+                              style: const TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold),
+                            ),
+                            Text("${widget.event!.date}",
+                                style: const TextStyle(color: Colors.grey)),
+                            Container(
+                              margin: const EdgeInsets.only(top: 20),
+                              child: Text(widget.event!.description),
+                            )
+                          ],
+                        ),
                       )
                     : Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Chip(
-                            padding: EdgeInsets.all(0),
-                            backgroundColor: colorPrimary,
-                            label: Text('BERITA',
-                                style: TextStyle(color: Colors.white)),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 20),
+
+                            child: Column(
+
+                              children: [
+                                const Chip(
+                                  padding: EdgeInsets.all(0),
+                                  backgroundColor: colorPrimary,
+                                  label: Text('NEWS',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
+                                Text(
+                                  widget.news!.title!,
+                                  style: const TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                                Text(widget.news!.date!,
+                                    style: const TextStyle(color: Colors.grey)),
+                                Container(
+                                  margin: const EdgeInsets.only(top: 20),
+                                  child: Text(widget.news!.content!),
+                                ),
+                                const SizedBox(height: 30),
+                              ],
+                            ),
                           ),
-                          Text(
-                            widget.news!.title!,
-                            style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold),
-                          ),
-                          Text(widget.news!.date!,
-                              style: TextStyle(color: Colors.grey)),
-                          Container(
-                            margin: EdgeInsets.only(top: 20),
-                            child: Text(widget.news!.content!),
-                          ),
-                          SizedBox(height: 50),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+
                             children: [
-                              Text(
-                                "- BERITA LAIN -",
+                              const Text(
+                                "- OTHER NEWS -",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,

@@ -1,8 +1,17 @@
 [
     {
         "id":"1",
-        "partner":"Alodokter",
-        "logo":"assets/images/alodokter.png"
+        "partner":"Harvard business",
+        "logo":"assets/images/partners1.png"
+    },  {
+        "id":"5",
+        "partner":"business",
+        "logo":"assets/images/partners3.png"
+    },
+    {
+        "id":"4",
+        "partner":"Logo",
+        "logo":"assets/images/partners2.png"
     },
     {
         "id":"2",

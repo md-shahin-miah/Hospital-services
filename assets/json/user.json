@@ -3,7 +3,7 @@
         "id":"1",
         "name":"Harry Powell",
         "email":"harry@github.com",
-        "kelamin":"Male",
+        "sex":"Male",
         "status":"You",
         "telephone":"0812745778890"
     },
@@ -11,7 +11,7 @@
         "id":"2",
         "name":"Natasha",
         "email":"natasha@gmail.com",
-        "kelamin":"Female",
+        "sex":"Female",
         "status":"Wife",
         "telephone":"081234537831"
     },
@@ -19,7 +19,7 @@
         "id":"e",
         "name":"Smith",
         "email":"Smith@gmail.com",
-        "kelamin":"Male",
+        "sex":"Male",
          "status":"Child",
         "telephone":"08634768992"
     }

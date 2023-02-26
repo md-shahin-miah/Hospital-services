@@ -27,7 +27,7 @@ class SliverCustomHeaderDelegate extends SliverPersistentHeaderDelegate {
   }
 
   Color makeStickyHeaderBgColor(shrinkOffset) {
-    final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255)
+    final int alpha = (shrinkOffset / (maxExtent - minExtent) * 255)
         .clamp(0, 255)
         .toInt();
     return Color.fromARGB(alpha, 255, 255, 255);

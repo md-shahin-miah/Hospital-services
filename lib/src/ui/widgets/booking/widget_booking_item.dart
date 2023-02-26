@@ -20,7 +20,7 @@ class BookingItem extends StatelessWidget {
       onTap: clickBack,
       child: Container(
         color: Colors.transparent,
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 35),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 35),
         child: Row(
           children: [
             CircleAvatar(
@@ -38,13 +38,10 @@ class BookingItem extends StatelessWidget {
                   Text(
                     doctor.name!,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
-                  ),
-                  SizedBox(
-                    height: 6,
                   ),
                   Text(
                     doctor.specialist!,
@@ -53,6 +50,9 @@ class BookingItem extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
                         color: Colors.grey),
+                  ),
+                  const SizedBox(
+                    height: 6,
                   )
                 ],
               ),

@@ -29,16 +29,17 @@ class _HomeNewsState extends State<HomeNews> {
   @override
   void initState() {
     super.initState();
-    this.getDummyNews();
+    getDummyNews();
   }
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-      child: Container(
+      padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+      child: SizedBox(
         height: 260,
         child: ListView.builder(
+          padding: const EdgeInsets.only(left: 10),
           scrollDirection: Axis.horizontal,
           itemBuilder: (BuildContext context, int id) {
             return NewsCards(

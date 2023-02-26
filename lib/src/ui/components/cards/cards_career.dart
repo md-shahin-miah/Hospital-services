@@ -20,7 +20,7 @@ class CareerButtonsWidget extends StatelessWidget {
             itemCount: list.length,
             itemBuilder: (BuildContext context, int index) {
               return CareerButtonItem(
-                caption: list[index].nama,
+                caption: list[index].name,
                 image: list[index].image,
                 onClick: () {},
                 event: list[index],

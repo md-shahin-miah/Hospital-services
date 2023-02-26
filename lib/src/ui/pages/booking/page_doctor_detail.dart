@@ -37,7 +37,7 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
   @override
   void initState() {
     super.initState();
-    this.getDummyUser();
+    getDummyUser();
   }
 
   @override
@@ -52,15 +52,16 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
             left: 20,
             top: 40,
             child: FloatingActionButton(
+              mini: true,
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Icon(
+              backgroundColor: Colors.white,
+              child: const Icon(
                 Icons.arrow_back,
                 color: Colors.black,
-                size: 30,
+                size: 25,
               ),
-              backgroundColor: Colors.white,
             ),
           ),
           Container(
@@ -73,18 +74,18 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
                     backgroundImage: AssetImage(widget.doctor!.photos!),
                     backgroundColor: Colors.white,
                     radius: 70),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   widget.doctor!.name!,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 24,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 6),
+                const SizedBox(height: 6),
                 Text(
                   widget.doctor!.specialist!,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white70,
                       fontSize: 20,
                       fontWeight: FontWeight.w400),
@@ -99,10 +100,10 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
               maxChildSize: 0.85,
               builder: (BuildContext context, s) {
                 return Container(
-                  padding: EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                       color: Colors.grey[50],
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20))),
                   child: Stack(
@@ -112,7 +113,7 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
                         child: Container(
                           width: 40,
                           height: 10,
-                          margin: EdgeInsets.only(bottom: 20),
+                          margin: const EdgeInsets.only(bottom: 20),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
                               color: colorPrimary),
@@ -120,11 +121,11 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
                       ),
                       ListView(
                         controller: s,
-                        padding: EdgeInsets.only(top: 30, bottom: 10),
+                        padding: const EdgeInsets.only(top: 30, bottom: 10),
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Timetable",
                                 style: TextStyle(
@@ -136,30 +137,30 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
                               ScheduleItem(
                                 day: "Monday",
                                 time: "08.00-14.00",
-                                hospital: "Cengkareng General Hospital",
+                                hospital: "Famous General Hospital",
                               ),
                               ScheduleItem(
                                 day: "Wednesday",
                                 time: "08.00-14.00",
-                                hospital: "RSUD Tangerang Selatan",
+                                hospital: "Famous General Hospital",
                               )
                             ],
                           ),
-                          SizedBox(height: 20),
-                          ShortDescriptionWidget(
+                          const SizedBox(height: 20),
+                          const ShortDescriptionWidget(
                             title: "Biography",
                             shortDesc:
                                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
                           ),
-                          SizedBox(height: 20),
-                          ShortDescriptionWidget(
-                            title: "Kredensial",
+                          const SizedBox(height: 20),
+                          const ShortDescriptionWidget(
+                            title: "Credentials",
                             shortDesc:
                                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
                           ),
-                          SizedBox(height: 20),
-                          ShortDescriptionWidget(
-                            title: "Afliansi Akademik",
+                          const SizedBox(height: 20),
+                          const ShortDescriptionWidget(
+                            title: "Academic Affiliation",
                             shortDesc:
                                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
                           ),
@@ -176,7 +177,7 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
       bottomNavigationBar: BottomNavBooking(
         size: size,
         buttonClick: () {
-          this.userList!.length == 0
+          userList.isEmpty
               ? showFormBooking(size, true, context, () {
                   Navigator.push(
                       context,
@@ -190,7 +191,7 @@ class _BookingDoctorDetailState extends State<BookingDoctorDetail> {
                   MaterialPageRoute(
                       builder: (BuildContext context) => BookingConfirm(
                             doctor: widget.doctor!,
-                            user: this.userList[0],
+                            user: userList[0],
                           )));
         },
         buttonText: "Book now",

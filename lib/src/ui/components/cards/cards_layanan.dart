@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/service.dart';
-import '../../pages/services/page_layanan_detail.dart';
+import '../../pages/services/page_service_detail.dart';
 
 
 
@@ -24,7 +24,7 @@ class LayananButtonsWidget extends StatelessWidget {
             itemCount: list.length,
             itemBuilder: (BuildContext context, int index) {
               return ServiceButtonItem(
-                caption: list[index].nama!,
+                caption: list[index].name!,
                 image: list[index].image!,
                 onClick: () {},
                 layanan: list[index],

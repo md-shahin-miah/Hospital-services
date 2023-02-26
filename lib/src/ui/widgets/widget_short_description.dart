@@ -17,14 +17,14 @@ class ShortDescriptionWidget extends StatelessWidget {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
             color: colorPrimary, fontSize: 20, fontWeight: FontWeight.bold),
       ),
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       RichText(
         text: TextSpan(
             text: shortDesc,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 14,
               color: Colors.grey,
             )),

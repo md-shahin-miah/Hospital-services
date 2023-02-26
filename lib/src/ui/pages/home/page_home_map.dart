@@ -18,7 +18,7 @@ class _HomeMapState extends State<HomeMap> {
   void initState() {
     _markers.add(
       Marker(
-        markerId: MarkerId("24.8949, 91.8687"),
+        markerId: const MarkerId("24.8949, 91.8687"),
         position: _currentPosition,
         icon: BitmapDescriptor.defaultMarker,
       ),
@@ -30,7 +30,7 @@ class _HomeMapState extends State<HomeMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Our Location"),
+        title: const Text("Our Location"),
         backgroundColor: colorPrimary,
       ),
       body: GoogleMap(

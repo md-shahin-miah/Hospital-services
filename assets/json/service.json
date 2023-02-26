@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "nama": "Surgery room",
+        "name": "Surgery room",
         "short_desc": "Short Desc",
-        "deskripsi": "Description",
+        "description": "Description",
         "image": "assets/images/ruang_operasi.jpg"
     },
     {
         "id": 1,
-        "nama": "Examination Room",
+        "name": "Examination Room",
         "short_desc": "Short Desc",
-        "deskripsi": "Description",
+        "description": "Description",
         "image": "assets/images/ruang_periksa.jpg"
     },
     {
         "id": 1,
-        "nama": "Patient Waiting Room",
+        "name": "Patient Waiting Room",
         "short_desc": "Short Desc",
-        "deskripsi": "Description",
+        "description": "Description",
         "image": "assets/images/ruang_tunggu.jpeg"
     }
 ]

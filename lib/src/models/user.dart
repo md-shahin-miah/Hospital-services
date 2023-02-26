@@ -1,14 +1,14 @@
 class User {
-  String? _id, _name, _email, _kelamin, _status, _telephone;
+  String? _id, _name, _email, _sex, _status, _telephone;
 
-  User(this._name, this._email, this._kelamin, this._status, this._telephone);
-  User.withId(this._id, this._name, this._email, this._kelamin, this._status,
+  User(this._name, this._email, this._sex, this._status, this._telephone);
+  User.withId(this._id, this._name, this._email, this._sex, this._status,
       this._telephone);
 
   String? get id => _id;
   String? get name => _name;
   String? get email => _email;
-  String? get kelamin => _kelamin;
+  String? get sex => _sex;
   String? get status => _status;
   String? get telephone => _telephone;
 
@@ -24,9 +24,9 @@ class User {
     }
   }
 
-  set setKelamin(String newKelamin) {
-    if (100 >= newKelamin.length && newKelamin.length > 0) {
-      this._kelamin = newKelamin;
+  set setSex(String newSex) {
+    if (100 >= newSex.length && newSex.length > 0) {
+      this._sex = newSex;
     }
   }
 
@@ -50,7 +50,7 @@ class User {
     }
     map['name'] = _name;
     map['email'] = _email;
-    map['kelamin'] = _kelamin;
+    map['sex'] = _sex;
     map['status'] = _status;
     map['telephone'] = _telephone;
     return map;
@@ -60,7 +60,7 @@ class User {
     this._id = map['id'];
     this._name = map['name'];
     this._email = map['email'];
-    this._kelamin = map['kelamin'];
+    this._sex = map['sex'];
     this._status = map['status'];
     this._telephone = map['telephone'];
   }

@@ -12,7 +12,7 @@ void showFormBooking(
   TextEditingController textHp = new TextEditingController();
   TextEditingController textEmail = new TextEditingController();
   String _nama, _nohp, _email = '';
-  String _kelamin = '';
+  String _sex = '';
 
   showGeneralDialog(
     barrierLabel: "Barrier",
@@ -59,7 +59,7 @@ void showFormBooking(
                         children: [
                           _warning
                               ? Text(
-                                  "Maaf, anda belum terdaftar dalam aplikasi. Harap daftar terlebih dahulu untuk dapat memesan jadwal dengan dokter yang bersangkutan.",
+                                  "Sorry, you are not registered in the application. Please register in advance to be able to book an appointment with the doctor in question.",
                                   style: TextStyle(
                                     color: Colors.red[300],
                                     fontSize: 16,
@@ -68,7 +68,7 @@ void showFormBooking(
                                   ),
                                 )
                               : Text(
-                                  "Tambah pasien baru",
+                                  "Add new patient",
                                   style: TextStyle(
                                     color: colorPrimary,
                                     fontSize: 24,
@@ -83,7 +83,7 @@ void showFormBooking(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "Nama",
+                                    "Name",
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: 16,
@@ -114,7 +114,7 @@ void showFormBooking(
                                         contentPadding: EdgeInsets.only(
                                           left: 20, right: 20
                                         ),
-                                        hintText: "Nama",
+                                        hintText: "Name",
                                         hintStyle: TextStyle(
                                           color: Colors.grey[400],
                                         ),
@@ -124,7 +124,7 @@ void showFormBooking(
                                     ),
                                   ),
                                   SizedBox(height: 20),
-                                  Text(
+                                  const Text(
                                     "No Handphone",
                                     style: TextStyle(
                                         color: Colors.grey,
@@ -132,7 +132,7 @@ void showFormBooking(
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Container(
-                                    padding: EdgeInsets.symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                         horizontal: 5, vertical: 2),
                                     decoration: BoxDecoration(
                                         color: Colors.grey[50],
@@ -154,7 +154,7 @@ void showFormBooking(
                                         _nohp = val!;
                                       },
                                       decoration: InputDecoration(
-                                        contentPadding: EdgeInsets.only(
+                                        contentPadding: const EdgeInsets.only(
                                           left: 20, right: 20
                                         ),
                                         hintText: "No Handphone",
@@ -168,7 +168,7 @@ void showFormBooking(
                                   ),
                                   SizedBox(height: 20),
                                   Text(
-                                    "Jenis Kelamin",
+                                    "Gender",
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: 16,
@@ -179,12 +179,12 @@ void showFormBooking(
                                     children: [
                                       Expanded(
                                         child: RadioListTile(
-                                          value: "laki",
-                                          selected: _kelamin == 'laki',
+                                          value: "Male",
+                                          selected: _sex == 'Male',
                                           activeColor: colorPrimary,
-                                          groupValue: _kelamin,
+                                          groupValue: _sex,
                                           title: Text(
-                                            "Laki-laki",
+                                            "Male",
                                             style: TextStyle(
                                               color: Colors.grey,
                                               fontSize: 14,
@@ -193,18 +193,18 @@ void showFormBooking(
                                           ),
                                           onChanged: (val) {
                                             print(val);
-                                            _kelamin = val!;
+                                            _sex = val!;
                                           }
                                         ),
                                       ),
                                       Expanded(
                                         child: RadioListTile(
-                                          value: "perempuan",
-                                          selected: _kelamin == 'perempuan',
+                                          value: "Female",
+                                          selected: _sex == 'Female',
                                           activeColor: colorPrimary,
-                                          groupValue: _kelamin,
-                                          title: Text(
-                                            "Perempuan",
+                                          groupValue: _sex,
+                                          title: const Text(
+                                            "Female",
                                             style: TextStyle(
                                               color: Colors.grey,
                                                 fontSize: 14,
@@ -213,14 +213,14 @@ void showFormBooking(
                                             ),
                                             onChanged: (val) {
                                               print(val);
-                                              _kelamin = val!;
+                                              _sex = val!;
                                             }
                                           ),
                                         ),
                                       ],
                                     ),
                                     SizedBox(height: 20),
-                                    Text(
+                                    const Text(
                                       "Email",
                                       style: TextStyle(
                                         color: Colors.grey,
@@ -229,7 +229,7 @@ void showFormBooking(
                                       ),
                                     ),
                                     Container(
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                         horizontal: 5, vertical: 2
                                       ),
                                       decoration: BoxDecoration(
@@ -243,7 +243,7 @@ void showFormBooking(
                                       validator: (value) {
                                         if (value!.length < 3) {
                                           print('is empty');
-                                          return 'Email must be more than 6 charater';
+                                          return 'Email must be more than 6 character';
                                         } else
                                           return null;
                                       },
@@ -251,7 +251,7 @@ void showFormBooking(
                                         _email = val!;
                                       },
                                       decoration: InputDecoration(
-                                        contentPadding: EdgeInsets.only(left: 20, right: 20),
+                                        contentPadding: const EdgeInsets.only(left: 20, right: 20),
                                         hintText: "email",
                                         hintStyle: TextStyle(
                                           color: Colors.grey[400],
@@ -261,12 +261,12 @@ void showFormBooking(
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 20),
+                                  const SizedBox(height: 20),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       ButtonPrimary(
-                                        buttonText: "Batal",
+                                        buttonText: "Cancelled",
                                         color: Colors.grey[200]!,
                                         textColor: Colors.black,
                                         onClicked: () {
@@ -274,7 +274,7 @@ void showFormBooking(
                                         },
                                       ),
                                       ButtonPrimary(
-                                        buttonText: "Daftar",
+                                        buttonText: "List",
                                         color: colorPrimary,
                                         textColor: Colors.white,
                                         onClicked: daftarClick,
@@ -297,7 +297,7 @@ void showFormBooking(
     },
     transitionBuilder: (_, anim, __, child) {
       return SlideTransition(
-        position: Tween(begin: Offset(0, 1), end: Offset(0, 0)).animate(anim),
+        position: Tween(begin: const Offset(0, 1), end: const Offset(0, 0)).animate(anim),
         child: child,
       );
     },

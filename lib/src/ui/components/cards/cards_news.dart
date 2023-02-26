@@ -16,17 +16,17 @@ class _NewsCardsState extends State<NewsCards> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.only(right: 10, bottom: 5),
-        height: 160,
-        width: 200,
+        margin: EdgeInsets.only(right: 8, bottom: 8,top: 8,left:8),
+
+        width: 170,
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
             boxShadow: [
               BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
+                  color: Colors.black.withOpacity(0.3),
                   blurRadius: 6,
-                  offset: Offset(1, 1))
+                  offset: const Offset(1, 1))
             ]),
         child: InkWell(
           splashColor: Colors.blue.withAlpha(30),

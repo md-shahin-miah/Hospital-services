@@ -16,57 +16,62 @@ class _AboutDashboardState extends State<AboutDashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: colorPrimary,
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         title: const Text(
           "About Us",
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: 20
           ),
         ),
-        leading: MenuWidget(),
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            Container(
-              height:200,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image:AssetImage('assets/images/about.jpg'),
-                  fit: BoxFit.cover
-                )
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children:const [
-                  Text(
-                    "Overview of the Famous Hospital",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: colorPrimary,
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    "The Famous Hospital is the best hospital in Sylhet, supported by the best workforce in Bangladesh.",
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                      "Established By:\n- Shahin miah \n- Sattbroto\n- Ziadul islam")
-                ]
-              )
-            )
-            
-          ],
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back,color: Colors.white,),
+          onPressed: () {
+            print('back');
+            Navigator.pop(context);
+          },
+          color: Colors.black87,
         ),
+      ),
+      body: Column(
+        children: [
+          Container(
+            height:200,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image:AssetImage('assets/images/about.jpg'),
+                fit: BoxFit.cover
+              )
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children:const [
+                Text(
+                  "Overview of the Famous Hospital",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: colorPrimary,
+                  )
+                ),
+                SizedBox(height: 10),
+                Text(
+                  "The Famous Hospital is the best hospital in Sylhet, supported by the best workforce in Bangladesh.",
+                ),
+                SizedBox(height: 10),
+                Text(
+                    "Established By:\n- Shahin miah \n- Sattbroto\n- Ziadul islam")
+              ]
+            )
+          )
+
+        ],
       ),
     );
   }

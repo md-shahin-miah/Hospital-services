@@ -104,11 +104,11 @@ class DashboardMain extends StatelessWidget {
                         ],
                       ),
                     ),
-                    title: Text("Today"),
-                    subtitle: Text("16 patients"),
+                    title: const Text("Today"),
+                    subtitle: Text("18 patients"),
                   ),
                 ),
-                VerticalDivider(),
+                const VerticalDivider(),
                 Expanded(
                   child: ListTile(
                     leading: Container(
@@ -143,8 +143,8 @@ class DashboardMain extends StatelessWidget {
                         ],
                       ),
                     ),
-                    title: Text("Canceled"),
-                    subtitle: Text("7 patients"),
+                    title: const Text("Canceled"),
+                    subtitle: const Text("3 patients"),
                   ),
                 ),
               ],
@@ -160,7 +160,7 @@ class DashboardMain extends StatelessWidget {
                     color: Colors.teal,
                     icon: Icons.portrait,
                     title: "Number of Patient",
-                    data: "1200",
+                    data: "1100",
                   ),
                 ),
                 const SizedBox(width: 16.0),
@@ -169,7 +169,7 @@ class DashboardMain extends StatelessWidget {
                     color: Colors.green,
                     icon: Icons.portrait,
                     title: "Admitted",
-                    data: "857",
+                    data: "559",
                   ),
                 ),
               ],
@@ -185,7 +185,7 @@ class DashboardMain extends StatelessWidget {
                     color: Colors.red,
                     icon: Icons.favorite,
                     title: "Discharged",
-                    data: "864",
+                    data: "764",
                   ),
                 ),
                 const SizedBox(width: 16.0),
@@ -194,7 +194,7 @@ class DashboardMain extends StatelessWidget {
                     color: Colors.blue,
                     icon: Icons.portrait,
                     title: "Dropped",
-                    data: "857",
+                    data: "357",
                   ),
                 ),
                 const SizedBox(width: 16.0),
@@ -203,7 +203,7 @@ class DashboardMain extends StatelessWidget {
                     color: colorPrimary,
                     icon: Icons.favorite,
                     title: "Arrived",
-                    data: "698",
+                    data: "598",
                   ),
                 ),
               ],
@@ -236,17 +236,20 @@ class DashboardMain extends StatelessWidget {
               style: whiteText.copyWith(
                   fontWeight: FontWeight.bold, fontSize: 20.0),
             ),
-            trailing: CircleAvatar(
-              backgroundColor: Colors.white,
-              radius: 30,
-              backgroundImage: AssetImage(avatar),
+            trailing: Container(
+              margin: EdgeInsets.symmetric(vertical: 5,horizontal: 5),
+              child: CircleAvatar(
+                backgroundColor: Colors.white,
+                radius: 30,
+                backgroundImage: AssetImage(avatar),
+              ),
             ),
           ),
           const SizedBox(height: 10.0),
           Padding(
             padding: const EdgeInsets.only(left: 26.0),
             child: Text(
-              "Dr. John Doe",
+              "Dr. Smith muller",
               style: whiteText.copyWith(
                 fontSize: 18.0,
                 fontWeight: FontWeight.w500,
@@ -257,7 +260,7 @@ class DashboardMain extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 26.0),
             child: Text(
-              "Md, (General Medium), DM\n(Cardiology)",
+              "Md, (General Medium), DM\n(Neurology)",
               style: whiteText,
             ),
           ),

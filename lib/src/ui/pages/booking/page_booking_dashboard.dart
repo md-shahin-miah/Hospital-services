@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hospital_management/src/ui/pages/booking/page_dokter_detail.dart';
+import 'package:hospital_management/src/ui/pages/booking/page_doctor_detail.dart';
 
 import '../../../constants/constant.dart';
 import '../../../models/home_doctor.dart';
@@ -51,8 +51,8 @@ class _BookingDashboardState extends State<BookingDashboard> {
           ),
           doctorList.length == 0
               ? Container(
-                  margin: EdgeInsets.only(top: 20),
-                  child: CircularProgressIndicator(
+                  margin: const EdgeInsets.only(top: 20),
+                  child: const CircularProgressIndicator(
                     backgroundColor: colorPrimary,
                     valueColor: AlwaysStoppedAnimation(Colors.white),
                   ))

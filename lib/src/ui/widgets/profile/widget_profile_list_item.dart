@@ -45,10 +45,10 @@ class ProfileListItem extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 5),
-                  Container(
+                  SizedBox(
                     width: 200,
                     child: Text(
                       subtitle,
